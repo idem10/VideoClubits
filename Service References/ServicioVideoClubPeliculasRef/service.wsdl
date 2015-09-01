@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServicioVideoClubPeliculas" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/ServicioViedoClubPeliculas" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicioVideoClubPeliculas_GetPelicula_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPelicula" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVideoClubPeliculas_GetPelicula_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeliculaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVideoClubPeliculas_GetPelicula_PelFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/ServicioViedoClubPeliculas" name="detail" element="q1:PelFault" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVideoClubPeliculas_Insertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insertar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVideoClubPeliculas_Insertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVideoClubPeliculas_Insertar_PelFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/ServicioViedoClubPeliculas" name="detail" element="q2:PelFault" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVideoClubPeliculas_Eliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Eliminar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVideoClubPeliculas_Eliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVideoClubPeliculas_Eliminar_PelFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/ServicioViedoClubPeliculas" name="detail" element="q3:PelFault" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVideoClubPeliculas_RVP_InputMessage">
+    <wsdl:part name="parameters" element="tns:RVP" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVideoClubPeliculas_RVP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RVPResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVideoClubPeliculas_RVP_PelFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/ServicioViedoClubPeliculas" name="detail" element="q4:PelFault" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVideoClubPeliculas_GetCantidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCantidad" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVideoClubPeliculas_GetCantidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCantidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVideoClubPeliculas_GetCantidad_PelFaultFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/ServicioViedoClubPeliculas" name="detail" element="q5:PelFault" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVideoClubPeliculas_GetPeliculaT_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeliculaT" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVideoClubPeliculas_GetPeliculaT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeliculaTResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVideoClubPeliculas_GetPeliculaT_PelFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/ServicioViedoClubPeliculas" name="detail" element="q6:PelFault" />
+  </wsdl:message>
+  <wsdl:portType name="IServicioVideoClubPeliculas">
+    <wsdl:operation name="GetPelicula">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVideoClubPeliculas/GetPelicula" message="tns:IServicioVideoClubPeliculas_GetPelicula_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVideoClubPeliculas/GetPeliculaResponse" message="tns:IServicioVideoClubPeliculas_GetPelicula_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVideoClubPeliculas/GetPeliculaPelFaultFault" name="PelFaultFault" message="tns:IServicioVideoClubPeliculas_GetPelicula_PelFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insertar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVideoClubPeliculas/Insertar" message="tns:IServicioVideoClubPeliculas_Insertar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVideoClubPeliculas/InsertarResponse" message="tns:IServicioVideoClubPeliculas_Insertar_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVideoClubPeliculas/InsertarPelFaultFault" name="PelFaultFault" message="tns:IServicioVideoClubPeliculas_Insertar_PelFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVideoClubPeliculas/Eliminar" message="tns:IServicioVideoClubPeliculas_Eliminar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVideoClubPeliculas/EliminarResponse" message="tns:IServicioVideoClubPeliculas_Eliminar_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVideoClubPeliculas/EliminarPelFaultFault" name="PelFaultFault" message="tns:IServicioVideoClubPeliculas_Eliminar_PelFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RVP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVideoClubPeliculas/RVP" message="tns:IServicioVideoClubPeliculas_RVP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVideoClubPeliculas/RVPResponse" message="tns:IServicioVideoClubPeliculas_RVP_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVideoClubPeliculas/RVPPelFaultFault" name="PelFaultFault" message="tns:IServicioVideoClubPeliculas_RVP_PelFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCantidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVideoClubPeliculas/GetCantidad" message="tns:IServicioVideoClubPeliculas_GetCantidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVideoClubPeliculas/GetCantidadResponse" message="tns:IServicioVideoClubPeliculas_GetCantidad_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVideoClubPeliculas/GetCantidadPelFaultFault" name="PelFaultFault" message="tns:IServicioVideoClubPeliculas_GetCantidad_PelFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPeliculaT">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVideoClubPeliculas/GetPeliculaT" message="tns:IServicioVideoClubPeliculas_GetPeliculaT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVideoClubPeliculas/GetPeliculaTResponse" message="tns:IServicioVideoClubPeliculas_GetPeliculaT_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVideoClubPeliculas/GetPeliculaTPelFaultFault" name="PelFaultFault" message="tns:IServicioVideoClubPeliculas_GetPeliculaT_PelFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServicioVideoClubPeliculas" type="tns:IServicioVideoClubPeliculas">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPelicula">
+      <soap:operation soapAction="http://tempuri.org/IServicioVideoClubPeliculas/GetPelicula" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PelFaultFault">
+        <soap:fault use="literal" name="PelFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Insertar">
+      <soap:operation soapAction="http://tempuri.org/IServicioVideoClubPeliculas/Insertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PelFaultFault">
+        <soap:fault use="literal" name="PelFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar">
+      <soap:operation soapAction="http://tempuri.org/IServicioVideoClubPeliculas/Eliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PelFaultFault">
+        <soap:fault use="literal" name="PelFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RVP">
+      <soap:operation soapAction="http://tempuri.org/IServicioVideoClubPeliculas/RVP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PelFaultFault">
+        <soap:fault use="literal" name="PelFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCantidad">
+      <soap:operation soapAction="http://tempuri.org/IServicioVideoClubPeliculas/GetCantidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PelFaultFault">
+        <soap:fault use="literal" name="PelFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPeliculaT">
+      <soap:operation soapAction="http://tempuri.org/IServicioVideoClubPeliculas/GetPeliculaT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PelFaultFault">
+        <soap:fault use="literal" name="PelFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioVideoClubPeliculas">
+    <wsdl:port name="BasicHttpBinding_IServicioVideoClubPeliculas" binding="tns:BasicHttpBinding_IServicioVideoClubPeliculas">
+      <soap:address location="http://localhost:8733/ServicioViedoClubPeliculas/ServicioVideoClubPeliculas/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

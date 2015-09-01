@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServicioBlo" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/ServicioVideoClubBlo" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicioBlo_GetBlo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBlo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioBlo_GetBlo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioBlo_GetBlo_BloFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/ServicioVideoClubBlo" name="detail" element="q1:BloFault" />
+  </wsdl:message>
+  <wsdl:message name="IServicioBlo_Bloquear_InputMessage">
+    <wsdl:part name="parameters" element="tns:Bloquear" />
+  </wsdl:message>
+  <wsdl:message name="IServicioBlo_Bloquear_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BloquearResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioBlo_Bloquear_BloFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/ServicioVideoClubBlo" name="detail" element="q2:BloFault" />
+  </wsdl:message>
+  <wsdl:message name="IServicioBlo_Desb_InputMessage">
+    <wsdl:part name="parameters" element="tns:Desb" />
+  </wsdl:message>
+  <wsdl:message name="IServicioBlo_Desb_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DesbResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioBlo_Desb_BloFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/ServicioVideoClubBlo" name="detail" element="q3:BloFault" />
+  </wsdl:message>
+  <wsdl:portType name="IServicioBlo">
+    <wsdl:operation name="GetBlo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioBlo/GetBlo" message="tns:IServicioBlo_GetBlo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioBlo/GetBloResponse" message="tns:IServicioBlo_GetBlo_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioBlo/GetBloBloFaultFault" name="BloFaultFault" message="tns:IServicioBlo_GetBlo_BloFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Bloquear">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioBlo/Bloquear" message="tns:IServicioBlo_Bloquear_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioBlo/BloquearResponse" message="tns:IServicioBlo_Bloquear_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioBlo/BloquearBloFaultFault" name="BloFaultFault" message="tns:IServicioBlo_Bloquear_BloFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Desb">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioBlo/Desb" message="tns:IServicioBlo_Desb_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioBlo/DesbResponse" message="tns:IServicioBlo_Desb_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioBlo/DesbBloFaultFault" name="BloFaultFault" message="tns:IServicioBlo_Desb_BloFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServicioBlo" type="tns:IServicioBlo">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetBlo">
+      <soap:operation soapAction="http://tempuri.org/IServicioBlo/GetBlo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="BloFaultFault">
+        <soap:fault use="literal" name="BloFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Bloquear">
+      <soap:operation soapAction="http://tempuri.org/IServicioBlo/Bloquear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="BloFaultFault">
+        <soap:fault use="literal" name="BloFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Desb">
+      <soap:operation soapAction="http://tempuri.org/IServicioBlo/Desb" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="BloFaultFault">
+        <soap:fault use="literal" name="BloFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioBlo">
+    <wsdl:port name="BasicHttpBinding_IServicioBlo" binding="tns:BasicHttpBinding_IServicioBlo">
+      <soap:address location="http://localhost:8733/ServicioVideoClubBlo/ServicioBlo/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

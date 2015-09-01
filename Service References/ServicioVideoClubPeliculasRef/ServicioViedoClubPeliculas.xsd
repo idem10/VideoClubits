@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ServicioViedoClubPeliculas" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ServicioViedoClubPeliculas" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Pel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ldisponible" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Loriginal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="actores" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="añofilm" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codigo" type="xs:int" />
+      <xs:element minOccurs="0" name="directores" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="disponibles" type="xs:int" />
+      <xs:element minOccurs="0" name="duracion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="genero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="titulo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Pel" nillable="true" type="tns:Pel" />
+  <xs:complexType name="PelFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FaultMessage" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PelFault" nillable="true" type="tns:PelFault" />
+</xs:schema>

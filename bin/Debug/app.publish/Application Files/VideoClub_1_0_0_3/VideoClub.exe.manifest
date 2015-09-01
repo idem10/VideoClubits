@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="VideoClub.exe" version="1.0.0.3" publicKeyToken="f8d6cb3e99f4db5e" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="VideoClub" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="VideoClub.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de Control de cuentas de usuario
+          Si desea cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el 
+          nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar la virtualización de archivos y del Registro para la 
+         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VideoClub.exe" size="1446400">
+      <assemblyIdentity name="VideoClub" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>hHmwVss7kbtDmI33vsioAdWmzmdh2Sh57lN2Zfx24qA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="VideoClub.exe.config" size="1953">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BwQ9y3e36QRcArKcxaS0LoQgRH6kXci6idHhq+GOibI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=IDEM\daniel" issuerKeyHash="290b090fd9975b969f009179fd6c9a2904ae2029" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>25ZMjSTTmMG79DTKaTemNt4TxUkVMHS2GuRCLos1ufc=</DigestValue></Reference></SignedInfo><SignatureValue>L0eiNXKfPf55jFRdsVQhlC8sIZgvH1ESjRc0b5TYv7TJ62uyU4tIjZxaN4xoFQbnrls4o2GJDRLbgp/MMGuU+oYnYZq41n/QRfW+CPIoWygF301MSeZhQsMAqhi6her4gsWgHCQBYMpEcR68CxahSvOkaTE4MEZAVNJsBeisq7w=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>hKeyv/ivVY713n00N1z4hpx4JykqNiLG6Lb4vL0slvZ2sxDAkxb9MN1KHTYS52tF0uQuL+uab/7vbEQzCh+BI4vQA3vc/lMDPo+oMOOp472Rg+e12vZOw7mKEJg5BpqK5jcdvWxIGZ5P+rAj2sqqb39/yA4hT8t2zUWwjflFWh0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f7b9358b2e42e41ab674301549c513de36a63769ca34f4bbc198d3248d4c96db" Description="" Url=""><as:assemblyIdentity name="VideoClub.exe" version="1.0.0.3" publicKeyToken="f8d6cb3e99f4db5e" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=IDEM\daniel</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>VDmBWoG8wk4cCtKk2Z0Ni9iH4lWxwRub39NsuQOOM8E=</DigestValue></Reference></SignedInfo><SignatureValue>ayZo3xG7FsIF6Wbp7PzOvwbjx/1nZjQDyBxIqPPX4z6yzAjTzwDzxAdeCh+VVklONMG9pnE2lM9z3TKKOlWoKIwuROnPoqOc8xiOlIvqi5oxfZ9YtNJvuDZNCU5GWH9xqNeJWg91CVrxJp714+HpkAimeuPeA+252M1nuQOLQgc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>hKeyv/ivVY713n00N1z4hpx4JykqNiLG6Lb4vL0slvZ2sxDAkxb9MN1KHTYS52tF0uQuL+uab/7vbEQzCh+BI4vQA3vc/lMDPo+oMOOp472Rg+e12vZOw7mKEJg5BpqK5jcdvWxIGZ5P+rAj2sqqb39/yA4hT8t2zUWwjflFWh0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBxTCCAS6gAwIBAgIQYbw4Vk2Gr7JB8ak+8xtnMTANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDHhYASQBEAEUATQBcAGQAYQBuAGkAZQBsMB4XDTE1MDcyNDA1MDYyN1oXDTE2MDcyMzExMDYyN1owITEfMB0GA1UEAx4WAEkARABFAE0AXABkAGEAbgBpAGUAbDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAhKeyv/ivVY713n00N1z4hpx4JykqNiLG6Lb4vL0slvZ2sxDAkxb9MN1KHTYS52tF0uQuL+uab/7vbEQzCh+BI4vQA3vc/lMDPo+oMOOp472Rg+e12vZOw7mKEJg5BpqK5jcdvWxIGZ5P+rAj2sqqb39/yA4hT8t2zUWwjflFWh0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQAXLZpMC4qqyWSTLXv8Il+YpVLvwIvexjLIY0xhFAc71dGxPfy7Er+3PKvzNpnI49SO17BzT1LWpONBTl/+tV9CeiFZFteMsLZpyvWLmX+VYQeQQXohtgdVUYBhrJj+A7WVaxoSbrSD1610WFV7Uwgx3s9Jh++ZhNpafgLqvwJOWw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

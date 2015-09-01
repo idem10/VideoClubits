@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ec875ac5-77c3-494d-bc6e-150a67d0e8ea" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/ServicioViedoClubPeliculas/ServicioVideoClubPeliculas/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="330e5406-018b-4186-95e4-3a3f313cefa9" SourceId="1" SourceUrl="http://localhost:8733/ServicioViedoClubPeliculas/ServicioVideoClubPeliculas/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="74865426-3c4f-4676-8ece-3e537e1905b5" SourceId="1" SourceUrl="http://localhost:8733/ServicioViedoClubPeliculas/ServicioVideoClubPeliculas/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="646e0a65-d4c6-4c1f-84c2-f20346a51a39" SourceId="1" SourceUrl="http://localhost:8733/ServicioViedoClubPeliculas/ServicioVideoClubPeliculas/mex" />
+    <MetadataFile FileName="ServicioViedoClubPeliculas.xsd" MetadataType="Schema" ID="5250fd61-83e3-4fa2-8115-f236469df0c5" SourceId="1" SourceUrl="http://localhost:8733/ServicioViedoClubPeliculas/ServicioVideoClubPeliculas/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
